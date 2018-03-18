@@ -1,0 +1,19 @@
+body {
+  padding: 120px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+p {
+  line-height: 1.5;
+}
+
+#logo {
+  width: 300px;
+  margin-bottom: 24px;
+}
+
+#content {
+  max-width: 600px;
+  margin: 0 auto;
+}

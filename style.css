@@ -1,19 +1,76 @@
 body {
-  padding: 120px;
+  margin: 0;
   font-family: 'Raleway', sans-serif;
-  text-align: center;
+  font-weight: 500;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 36px;
 }
 
 p {
   line-height: 1.5;
 }
 
-#logo {
-  width: 300px;
-  margin-bottom: 24px;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-#content {
+a:hover  {
+  text-decoration: underline;
+}
+
+header {
+  padding: 24px 36px;
+  background-color: black;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav {
+  color: white;
+}
+
+nav a:not(:last-child) {
+  margin-right: 36px;
+}
+
+section {
+  padding: 64px 72px;
+}
+
+section#story {
+  padding-right: 50%;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+section#story img {
+  height: 120%;
+  position: absolute;
+  left: 50%;
+  top: -10%;
+  transform: translateX(64px);
+}
+
+section article {
   max-width: 600px;
+}
+
+article.centered {
   margin: 0 auto;
+  text-align: center;
+}
+
+#logo {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }

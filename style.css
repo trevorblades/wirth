@@ -51,6 +51,10 @@ section {
   padding: 64px 72px;
 }
 
+section:nth-child(2n) {
+
+}
+
 section#story {
   padding-right: 50%;
   background-color: black;
@@ -67,11 +71,12 @@ section#story img {
   transform: translateX(64px);
 }
 
-section article {
-  max-width: 600px;
+section#contact {
+  border-left: 1px solid black;
 }
 
-article.centered {
+section article {
+  max-width: 600px;
   margin: 0 auto;
   text-align: center;
 }
@@ -81,4 +86,15 @@ article.centered {
   width: 250px;
   margin: 0 auto;
   margin-bottom: 48px;
+}
+
+#bottom {
+  display: flex;
+}
+
+#bottom section {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  width: 0;
 }
